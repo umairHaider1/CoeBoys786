@@ -1,0 +1,477 @@
+
+/* Global Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+    
+}
+.highlight{
+    color: #0051ff;
+    font-weight: bold;
+    font-family: cursive;
+    text-shadow: 0 2px 1px #747474, 
+      -1px 3px 1px #767676, 
+      -2px 5px 1px #787878, 
+      -3px 7px 1px #7a7a7a,
+      -4px 9px 1px #7f7f7f,
+      -5px 11px 1px #838383,
+      -6px 13px 1px #878787,
+      -7px 15px 1px #8a8a8a, 
+      -8px 17px 1px #8e8e8e,
+      -9px 19px 1px #949494,
+      -10px 21px 1px #989898,
+      -11px 23px 1px #9f9f9f,
+      -12px 5px 1px #a2a2a2, 
+      -13px 7px 1px #a7a7a7,
+      -14px 9px 1px #adadad,
+}
+
+:root{
+    --h1: #130F49;
+    --blue:#34A1CD;
+    --dark-purple:#55527C;
+    --grey:#B4B2C5;
+    --pink:#EA4C89;
+    --circle:#F4F3FF;
+    --light-pink:#FFF5F6;
+    --light-Purple:#ADA8FF;
+    --light-blue: #E9F9FF;
+}
+body,html{
+    font-family: "poppins";
+    overflow-x: hidden;
+}
+h1{
+    color: var(--h1);
+    font-size: 50px;
+}
+.title h1{
+    color: blue;
+}
+p{
+    color: var(--grey);
+}
+h4{
+    color: var(--dark-purple);
+}
+
+a{
+    text-decoration: none;
+}
+.ctn{
+    display: block;
+    padding: 8px 12px;
+    width: 250px;
+    background:#020345;
+    color: whitesmoke;
+    text-align: center;
+    border-radius:115px;
+    /* margin-top: 100px; */
+    font-size: 20px;
+    transition: background .5s;
+    
+}
+
+.hero .ctn{
+    margin: 20px auto;
+    
+}
+.ctn:hover{
+    background: rgba(245, 245, 245, 0.357);
+    border: 1px solid black;
+    color: black;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+}
+.grid-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: transform .6s;
+}
+
+/* x GLobal Styling x */
+
+/* header */
+/* header{
+    position: relative;
+} */
+nav{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+}
+.logo{
+    height: 50px;
+}
+.logo img{
+    width: 60px;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin:20px 10px;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: fantasy;
+}
+nav ul li:hover{
+    color: rgb(1, 36, 232);
+}
+
+
+
+
+
+/* Intro */
+
+header::after{
+    margin-top: 30px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    /* top: 20%; */ 
+    /* left: 50px; */
+    background:url("staff/Capture.PNG");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--light-blue);
+    box-shadow: 2px 2px 20px rgba(94, 83, 83, 0.425);
+    /* border-radius: 20px; */
+    opacity: .8;
+    
+}
+.title{
+    overflow: hidden;
+    text-align: center;
+}
+.title h2{
+    color: var(--grey);
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+/* Staff */
+.our-school{
+    margin-top: 400px;
+}
+.container{
+    max-width: 90%;
+    margin: 60px auto   ;
+    /* margin-left: 20px; */
+}
+.our-school .grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+}
+.our-school .grid-box img{
+    max-width: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.our-school .grid-box{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(121, 106, 106, 0.418);
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: transform .6s;
+    background:rgb(5, 6, 61);
+}
+.our-school .grid-box:hover{
+    transform: scale(1.2);
+}
+.our-school .grid-box h1{
+    color: var(--light-pink);
+}
+.our-school .container{
+    background: var(--light-blue);
+    /* padding: 60px; */
+}
+.our-school h4{
+    margin-top: 20px;
+    font-size:30px;
+    color: white;
+}
+.about .grid-box img{
+    width: 100px;
+}
+.about-text{
+    padding: 10px;
+    margin: 10px 0;
+    background: var(--grey);
+    max-width: 100%;
+}
+.about-text h1{
+    font-size: 35px;
+}
+.about-text h4{
+    color: var(--light-blue);
+}
+
+
+.hero .home-title h2{
+color: yellow;
+font-weight: bold;}
+.about-section h4{
+    font-size: 20px;
+    padding: 20px;
+}
+.home-title h1{
+    font-size: 50px;
+    margin-top: 250px;
+    color: rgb(225, 16, 16);
+
+}
+
+
+/* Students section */
+.students .grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,auto));
+
+}
+.students-title{
+    text-align: center;
+}
+
+
+.flex-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.flex-box{
+    justify-content: space-around;
+    
+
+}
+.students-img img{
+    max-width: 100%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.501);
+    margin: 10px;
+}
+.btn{
+    width:250px;
+    background: transparent;
+    border: 2px solid rgb(7, 0, 0);
+    padding: 10px;
+    color: rgb(7, 0, 0);
+    font-family: serif;
+    transition: background .5s;
+}
+.admissions .btn{
+    width:250px;
+    background: transparent;
+    border: 2px solid rgb(255, 253, 253);
+    padding: 10px;
+    color: rgb(238, 1, 1);
+    font-family: serif;
+    transition: background .5s;
+    font-size: 20px;
+}
+
+
+
+
+.students .btn{
+    margin: 20px auto;
+    display: block;
+}
+.btn:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 246, 246);
+    font-family: cursive;
+}
+.students-title h4{
+    font-size: 30px;
+}
+.students-title p{
+    font-size: 20px;
+    margin: 10px 10px;
+}
+.students-title{
+    border-bottom: 2px solid black;
+}
+
+.admissions{
+    margin-top: 89px;
+    /* background:rgb(5, 6, 61); */
+    background-image: url("admission.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    margin-bottom: 39px;
+    overflow: hidden;
+    height: 100vh;
+    /* box-shadow: 2px 2px 20px rgba(16, 1, 1, 0.809); */
+    position: relative;
+    opacity: .7;
+    
+}
+
+
+
+   
+
+/* .admission-content img{
+    max-width: 100%;
+
+} */
+/* .ad-img{
+    width: 100%;
+    overflow: hidden;
+}
+.ad-img img{gh
+    width0%;
+} */
+.ad-text{
+    text-align: center;
+    
+}
+
+.ad-text h2{
+    margin-top: 180px;
+    border-top: 2px solid rgb(175, 86, 86);
+    font-size: 50px;
+    padding: 20px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+}
+.b-bottom{
+    border-top: 2px solid rgb(175, 86, 86);
+}
+.ad-text h4{
+    font-size: 35px;
+    color: rgb(255, 238, 0);
+}
+.ad-img img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: .4;
+    top: 0px;
+    left: -2px;
+    /* z-index: 1; */
+}
+.admission-content{
+    z-index: -1;
+}
+
+
+    /* School Timing */
+.school-timing{
+    margin-top: 30px;
+}
+.school-timing hr{
+    margin-bottom: 50px;
+}
+.col-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+.clock-img{
+    display:flex;
+    justify-content: center;
+}
+.school-timing h1{
+    border-top: 2px solid blue;
+    color: blue;
+}
+.school-timing h2{
+    color: navy;
+}
+.school-timing h4{
+    color: rgb(255, 0, 0);
+}
+
+    /* Labs Section  */
+.labs{
+    border-top: 2px solid blue;
+    margin-top: 50px;
+    position: relative;
+}
+.labs .grid-box img{
+    max-width:100%;
+    z-index: 1;
+    /* display: block; */
+    opacity: .6;
+    transition: transform  .5s, opacity .5s;
+    border-radius: 50%;
+}
+.labs h2{
+    margin-bottom: 10px;
+}
+.labs .grid-box img:hover{
+    opacity: 1;
+    transform: translateY(  10px);
+    
+}
+
+.labs .title{
+
+    margin-top:1rem;
+
+}
+.staff{
+    margin-top: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.staff .title{
+    margin-top: none;
+}
+.staff-img img{
+    max-width: 100%;
+}
+.staff-content::after{
+    content: '';
+    position: absolute;
+    background: radial-gradient(#ff234f4a,rgba(3, 184, 175, 0.638));
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    top:120px;
+    margin-top: 50px;
+}
+.staff-text{
+    text-align: center;
+}
+
+.why-us{
+    margin-top: 30px;
+}
+.why-text{
+    text-align: center;
+}
+.ws-f-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
